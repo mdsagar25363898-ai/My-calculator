@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1f1f26">
+<title>My Calculator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="top-bar">
+<h1>My Calculator</h1>
+<button class="theme-btn" onclick="toggleTheme()">🌙</button>
+</div>
+
+<div class="calculator">
+<div class="display">
+<div id="history"></div>
+<div id="display">0</div>
+</div>
+
+<div class="history-box">
+<div class="history-header">
+<span>📜 History</span>
+<button onclick="clearHistory()">🗑️ Clear</button>
+</div>
+<div id="historyList"></div>
+</div>
+
+<div class="buttons">
+<button class="function" onclick="clearDisplay()">AC</button>
+<button class="function" onclick="deleteLast()">DEL</button>
+<button class="function" onclick="percentage()">%</button>
+<button class="operator" onclick="chooseOperator('÷')">÷</button>
+
+<button class="function" onclick="appendParenthesis('(')">(</button>
+<button class="function" onclick="appendParenthesis(')')">)</button>
+<button class="function" onclick="squareRoot()">√</button>
+<button class="operator" onclick="chooseOperator('×')">×</button>
+
+<button class="function" onclick="square()">x²</button>
+<button class="function" onclick="toggleSign()">±</button>
+<button class="function" onclick="appendConstant('pi')">π</button>
+<button class="operator" onclick="chooseOperator('-')">−</button>
+
+<button class="scientific" onclick="scientificFunction('sin')">sin</button>
+<button class="scientific" onclick="scientificFunction('cos')">cos</button>
+<button class="scientific" onclick="scientificFunction('tan')">tan</button>
+<button class="operator" onclick="chooseOperator('+')">+</button>
+
+<button class="scientific" onclick="scientificFunction('log')">log</button>
+<button class="scientific" onclick="scientificFunction('ln')">ln</button>
+<button class="scientific" onclick="factorial()">!</button>
+<button class="operator" onclick="chooseOperator('^')">xʸ</button>
+
+<button onclick="appendNumber('7')">7</button>
+<button onclick="appendNumber('8')">8</button>
+<button onclick="appendNumber('9')">9</button>
+<button class="operator" onclick="chooseOperator('÷')">÷</button>
+
+<button onclick="appendNumber('4')">4</button>
+<button onclick="appendNumber('5')">5</button>
+<button onclick="appendNumber('6')">6</button>
+<button class="operator" onclick="chooseOperator('×')">×</button>
+
+<button onclick="appendNumber('1')">1</button>
+<button onclick="appendNumber('2')">2</button>
+<button onclick="appendNumber('3')">3</button>
+<button class="operator" onclick="chooseOperator('-')">−</button>
+
+<button class="zero" onclick="appendNumber('0')">0</button>
+<button onclick="appendDecimal()">.</button>
+<button class="equals" onclick="calculate()">=</button>
+<button class="operator" onclick="chooseOperator('+')">+</button>
+</div>
+</div>
+
+<footer>My Calculator © 2026</footer>
+<script src="script.js"></script>
+</body>
+</html>
