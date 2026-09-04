@@ -1,0 +1,16 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "My Calculator",
+  "orientation": "any",
+  "scope": "/My-calculator/",
+  "short_name": "Calculator",
+  "start_url": "/My-calculator/",
+  "theme_color": "#1f1f26",
+  "description": "A simple and fast calculator app.",
+  "lang": "en",
+  "categories": [
+    "utilities"
+  ]
+}
